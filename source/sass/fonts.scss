@@ -1,0 +1,15 @@
+// Open Sans
+@include font("Open Sans", "opensans/opensans-400", "400", "normal");
+@include font("Open Sans", "opensans/opensans-700", "700", "normal");
+// Montserrat
+@include font("Montserrat", "montserrat/montserrat-400", 400, normal);
+@include font("Montserrat", "montserrat/montserrat-500", 500, normal);
+@include font("Montserrat", "montserrat/montserrat-600", 600, normal);
+@include font("Montserrat", "montserrat/montserrat-700", 700, normal);
+// Poppins
+@include font("Poppins", "poppins/poppins-500", "500", "normal");
+// Roboto
+@include font("roboto", "roboto/roboto-100", 100, normal);
+@include font("roboto", "roboto/roboto-400", 400, normal);
+@include font("roboto", "roboto/roboto-500", 500, normal);
+@include font("roboto", "roboto/roboto-700", 700, normal);
