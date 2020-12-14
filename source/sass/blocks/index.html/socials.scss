@@ -1,0 +1,30 @@
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 220px;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.socials li {
+    margin-right: 22px;
+    margin-bottom: 15px;
+
+    list-style: none;
+}
+
+.socials a {
+    transition: $standart_transition;
+
+    &:hover {
+        opacity: $hover_opacity;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        opacity: $focus_opacity;
+    }
+}

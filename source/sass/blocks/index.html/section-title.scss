@@ -1,0 +1,12 @@
+.section-title {
+    @include general-font-family();
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 72px;
+    color: $title_color;
+    text-align: center;
+}
+
+.section-title > span {
+    color: $accent_color;
+}

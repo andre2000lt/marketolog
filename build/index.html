@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+        <!-- Pixel Glass -->
+        <style>
+            html {
+                /* Mobile layout by default */
+                background-image: url("img/models/320.png");
+                background-repeat: no-repeat;
+                background-position: 50% 0;
+            }
+            /* Tablet */
+            @media (min-width: 760px) {
+                html {
+                    /* Tablet layout */
+                    background-image: url("img/models/760.png");
+                }
+            }
+            /* Desktop */
+            @media (min-width: 1920px) {
+                html {
+                    /* Desktop layout */
+                    background-image: url("img/models/1920.png");
+                }
+            }
+        </style>
+        <link href="pixel-glass/styles.css" rel="stylesheet">
+        <script src="pixel-glass/script.js"></script>
+        <!-- // Pixel Glass -->
+</head>
+
+<body>
+        <!-- ШАПКА -->
+    <header class="header">
+        <!-- Header Top -->
+        <div class="header__top">
+            <div class="header__top-inner">
+                <div class="header__logo">
+                    <picture>  
+                        <!-- .webp -->
+                        <source type="image/webp"
+                          srcset="img/logo.webp 1x, img/logo_2x.webp 2x">
+                        <!-- .png -->
+                        <img src="img/logo.png" srcset= "img/logo_2x.png" alt="Лого сайта" width="316" height="30">
+                    </picture>
+                </div>
+    
+                <div class="header__top-right">
+                    <!-- Socials -->
+                    <div class="header__socials-wrapper">
+                        <span>Следите за нами</span>
+    
+                        <ul class="header__socials socials">
+                            <li>
+                                <a href="facebook.com">
+                                    <img src="../img/header/facebook.svg" alt="facebook" width="50" height="50">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="youtube.com">
+                                    <img src="../img/header/youtube.svg" alt="youtube" width="50" height="50">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <a class="header__faq-link" href="#">FAQ</a>
+    
+                    <button class="header__contact-button">Свяжитесь со мной</button>
+    
+                    <span class="header__select-lang">RU</span>
+                </div>
+            </div> <!-- \.header__top-inner -->    
+        </div>
+
+        <!-- Header Bottom -->
+        <div class="header__bottom">
+            <div class="header__bottom-inner">
+                <h1>
+                    <span class="accent-font">Эффективный</span> директор по <span class="accent-font">маркет</span>ингу </br>для вашего бизнеса
+                </h1>
+
+                <a class="header__play-video" href="">Смотреть видео-приветствие</a>
+            </div>
+        </div>  
+    </header>
+    <main>
+        <!-- Наша экспертиза -->
+        <section class="ekspertise">
+            <div class="ekspertise__inner">
+                <h2 class="section-title"><span>Наша</span> экспертиза</h2>
+                
+                <!-- СЛАЙДЕР -->
+                <div class="ekspertise__slider">
+                    <div class="ekspertise__slider-container swiper-container">
+                        <ul class="ekspertise__item-list swiper-wrapper">
+                            <li class="swiper-slide"> 
+                                <div class="ekspertise__item-picture ekspertise__item-picture--shadow-down">
+                                    <img src="../img/ekspertise/consulting.svg" alt="Видео чат" width="76" height="76">
+                                </div>
+                                <p>
+                                    Профессиональный консалтинг
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="ekspertise__item-picture ekspertise__item-picture--shadow-up">
+                                    <img src="../img/ekspertise/audit.svg" alt="Блокнот и ручка" width="74" height="74">
+                                </div>
+                                <p>
+                                    Маркетинг <br> аудит
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="ekspertise__item-picture ekspertise__item-picture--shadow-down">
+                                    <img src="../img/ekspertise/strategy.svg" alt="Шахматные фигуры" width="70" height="70">
+                                </div>
+                                <p>
+                                    Маркетинг <br> стратегия 
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="ekspertise__item-picture ekspertise__item-picture--shadow-up">
+                                    <img src="../img/ekspertise/media.svg" alt="Медиа устройства" width="88" height="76">
+                                </div>
+                                <p>
+                                    Медиапланирование
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="ekspertise__item-picture ekspertise__item-picture--shadow-down">
+                                    <img src="../img/ekspertise/projects.svg" alt="Доска с графиком" width="72" height="72">
+                                </div>
+                                <p>
+                                    Проектное <br> управление
+                                </p>
+                            </li>
+                        </ul>
+                    </div>    
+
+                    <button class="ekspertise__slider-left-button slider-button slider-button--left">
+                        <span class="visually-hidden">Двигать влево</span>
+                    </button>
+                    <div class="ekspertise__slider-right-button slider-button slider-button--right">
+                        <span class="visually-hidden">Двигать вправо</span>
+                    </div>
+                </div>  <!-- / .ekspertise__slider  -->
+               
+            </div>
+        </section>
+        
+
+    </main>
+        <footer class="footer">
+        Copyright by Andre
+    </footer>
+
+<body>
+
+</html>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

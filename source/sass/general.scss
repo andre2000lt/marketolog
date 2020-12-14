@@ -16,6 +16,8 @@ img {
 
 body {
     background-color: $primary_bg_color;
+
+    @include general-font();
 }
 
 .visually-hidden {

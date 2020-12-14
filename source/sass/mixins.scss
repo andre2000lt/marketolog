@@ -12,28 +12,30 @@
     }
 }
 
-@mixin general-font() {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 2;
-    color: #444444;
-    letter-spacing: normal;
-}
-
 @mixin general-font-family() {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: "Neo Sans Pro", "Arial", sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
 
-@mixin general-font-family-bold() {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-weight: 700;
+@mixin general-font() {
+    @include general-font-family();
+    font-size: 20px;
+    color: $text_color_light;
+    letter-spacing: normal;
 }
 
 @mixin flex-center() {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin after() {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    content: "";
+
+    transform: translateY(-50%);
 }

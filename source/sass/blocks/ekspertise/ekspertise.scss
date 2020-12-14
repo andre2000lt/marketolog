@@ -1,0 +1,95 @@
+.ekspertise {
+    padding-top: 153px;
+}
+
+.ekspertise h2 {
+    margin-bottom: 66px;
+}
+
+.ekspertise__inner {
+    max-width: 1650px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.ekspertise__slider {
+    position: relative;
+}
+
+.ekspertise__slider-container {
+    width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.ekspertise__item-list {
+    display: flex;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ekspertise__item-list li {
+    width: 288px;
+}
+
+.ekspertise__item-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 210px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    &--shadow-down {
+        height: 243px;
+        margin-bottom: 18px;
+
+        background: url("../img/ekspertise/rhomb_shadow_down.png") no-repeat;
+        background-size: 210px 243px;
+
+        transform: translateY(5px);
+    }
+
+    &--shadow-up {
+        height: 234px;
+        margin-bottom: 5px;
+
+        background: url("../img/ekspertise/rhomb_shadow_up.png") no-repeat;
+        background-size: 210px 234px;
+    }
+}
+
+.ekspertise__item-list p {
+    margin: 0;
+
+    @include general-font-family();
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    color: $text_color;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ekspertise__slider-left-button {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+
+    display: block;
+
+    transform: translateY(-35%);
+}
+
+.ekspertise__slider-right-button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+
+    transform: translateY(-35%);
+}

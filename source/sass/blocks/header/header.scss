@@ -1,1 +1,135 @@
 /* -- HEADER -- */
+.header {
+    min-height: 994px;
+    background: $primary_bg_color url("../img/header/header_background.jpg") no-repeat left top;
+    background-size: cover;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    max-width: 1650px;
+    padding-right: 20px;
+    padding-left: 105px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin-top: 90px;
+}
+
+.header__top-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.header__socials-wrapper {
+    display: flex;
+
+    margin-top: 60px;
+}
+
+.header__socials-wrapper > span {
+    margin-right: 20px;
+    line-height: 80px;
+}
+
+.header__faq-link {
+    margin-top: 60px;
+    margin-left: 20px;
+
+    @include general-font();
+    line-height: 80px;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: $hover_opacity;
+    }
+
+    &:active,
+    &:focus {
+        color: $accent_color;
+
+        outline: none;
+        opacity: $focus_opacity;
+    }
+}
+
+.header__contact-button {
+    min-width: 243px;
+    max-width: 250px;
+    height: auto;
+    padding: 0 12px;
+    margin-top: 72px;
+    margin-left: 52px;
+
+    @include general-font();
+    line-height: 56px;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 2px solid  $primary_bg_color;
+
+    &:hover {
+        opacity: $hover_opacity;
+    }
+}
+
+.header__select-lang {
+    position: relative;
+
+    padding-right: 22px;
+    margin-top: 77px;
+    margin-left: 42px;
+
+    line-height: 45px;
+    text-transform: uppercase;
+
+    &::after {
+        @include after();
+        width: 12px;
+        height: 7px;
+
+        background: url("../img/header/select_arrow.svg") no-repeat;
+    }
+}
+
+.header__bottom-inner {
+    max-width: 1610px;
+    padding-left: 85px;
+    margin: 0 auto;
+}
+
+.header__bottom-inner h1 {
+    width: 535px;
+    padding-left: 34px;
+    margin-top: 220px;
+    margin-bottom: 40px;
+
+    border-left: 3px solid $accent_color;
+}
+
+.header__play-video {
+    position: relative;
+
+    padding-left: 115px;
+
+    @include general-font();
+    line-height: 80px;
+
+    &::before {
+        position: absolute;
+        top: -18px;
+        left: 32px;
+        width: 60px;
+        height: 60px;
+
+        content: "";
+
+        background: url("../img/header/play_button.svg") no-repeat;
+    }
+}

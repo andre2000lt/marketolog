@@ -78,7 +78,7 @@ gulp.task("copy", function () {
       "source/fonts/**/*.{woff,woff2}",
       "source/js/**/*.js",
       "source/*.ico",
-      "source/css/normalize.css",
+      "source/css/**/*.*",
       "source/pixel-glass/**/*.*"
 
     ], {
@@ -117,7 +117,7 @@ gulp.task("scssToCss", function () {
 gulp.task("images", function () {
     return gulp.src([
       "source/img/**/*.{png,jpg,svg,webp}",
-      "!source/img/models/**/*.*"
+    //   "!source/img/models/**/*.*"
     ])
     // .pipe(imagemin([
     //   imagemin.optipng({optimizationLevel: 3}),

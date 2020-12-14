@@ -1,0 +1,28 @@
+.slider-button {
+    display: block;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+
+    &--left {
+        background-image: url("../img/ekspertise/slider_arrow_left.svg");
+    }
+
+    &--right {
+        background-image: url("../img/ekspertise/slider_arrow_right.svg");
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+
+        outline: none;
+
+        box-shadow: 0 0 3px 3px $accent_color;
+    }
+}
